@@ -9,7 +9,7 @@ apt-get install -y libstdc++6:i386
 apt-get install -y autoconf automake libtool
 apt-get install -y gcc g++ gcc-multilib g++-multilib
 
-apt-get install -y python27
+apt-get install -y python2.7
 
 apt-get install -y gdb gdb-multiarch
 apt-get install -y strace ltrace
