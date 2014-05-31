@@ -18,4 +18,6 @@ apt-get install -y hexedit
 apt-get install -y testdisk foremost
 apt-get install -y wireshark
 
+apt-get install -y p7zip-full
+
 
