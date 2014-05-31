@@ -33,6 +33,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Example for VirtualBox:
     problem.vm.provider :virtualbox do |vb|
         vb.gui = true
+        vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
      end
   end
 end
