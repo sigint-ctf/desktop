@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 box    = 'debian-7.5-desktop'
-url    = 'http://canta.ucsd.edu/~kmowery/debian-7.5.box'
-cksum  = '9fc8b75510d3c38adf55925ae4a2305098393d8452a79549fb70e35568e979f0'
+url    = ''
+cksum  = '5b8f187e3134f31632541ec4f37d5bb10527992f164cfe0b03dfd6019a56afe7'
 cktype = 'sha256'
 name   = 'debian-7.5'
 
