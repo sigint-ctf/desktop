@@ -7,7 +7,7 @@ apt-get install -y libstdc++6:i386
 
 # install -y tools
 apt-get install -y autoconf automake libtool
-apt-get install -y gcc g++ gcc-multilib g++-multilib
+apt-get install -y gcc g++
 
 apt-get install -y python2.7
 
