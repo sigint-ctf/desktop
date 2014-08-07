@@ -20,4 +20,17 @@ apt-get install -y wireshark
 
 apt-get install -y p7zip-full
 
+mkdir -p /tmp/build/
+
+# Install binwalk 2.0.0
+cd /tmp/build/
+wget https://github.com/devttys0/binwalk/archive/v2.0.0.tar.gz
+tar -xvvzf v2.0.0.tar.gz
+cd binwalk-2.0.0/
+./configure
+make
+make install
+cd /
+
+rm -r /tmp/build
 
