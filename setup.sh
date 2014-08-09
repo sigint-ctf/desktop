@@ -34,3 +34,7 @@ cd /
 
 rm -r /tmp/build
 
+# Disable xscreensaver
+cp /vagrant/configs/xscreensaver /home/vagrant/.xscreensaver
+chown vagrant:vagrant /home/vagrant/.xscreensaver
+
