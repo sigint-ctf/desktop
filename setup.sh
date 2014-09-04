@@ -39,6 +39,8 @@ cp /vagrant/configs/xscreensaver /home/vagrant/.xscreensaver
 chown vagrant:vagrant /home/vagrant/.xscreensaver
 
 # Install gdb-peda
-mkdir ~/tools
-git clone https://github.com/longld/peda.git ~/tools/peda
-echo "source ~/tools/peda/peda.py" >> ~/.gdbinit
+mkdir ~vagrant/tools
+git clone https://github.com/longld/peda.git ~vagrant/tools/peda
+chown -R vagrant:vagrant ~vagrant/tools/
+echo "source ~/tools/peda/peda.py" >> ~vagrant/.gdbinit
+chown vagrant:vagrant ~vagrant/.gdbinit
