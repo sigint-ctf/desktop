@@ -45,3 +45,6 @@ git clone https://github.com/longld/peda.git ~vagrant/tools/peda
 chown -R vagrant:vagrant ~vagrant/tools/
 echo "source ~/tools/peda/peda.py" >> ~vagrant/.gdbinit
 chown vagrant:vagrant ~vagrant/.gdbinit
+
+# Send a friendly message indicating that setup is complete
+which notify-send && DISPLAY=:0 sudo -u vagrant notify-send "Provisioning is complete. You can now use the machine." || true
