@@ -9,7 +9,7 @@ apt-get install -y libstdc++6:i386
 apt-get install -y autoconf automake libtool
 apt-get install -y gcc g++
 
-apt-get install -y python2.7
+apt-get install -y python2.7 python-pip python-dev
 
 apt-get install -y gdb gdb-multiarch
 apt-get install -y strace ltrace
@@ -45,6 +45,9 @@ git clone https://github.com/longld/peda.git ~vagrant/tools/peda
 chown -R vagrant:vagrant ~vagrant/tools/
 echo "source ~/tools/peda/peda.py" >> ~vagrant/.gdbinit
 chown vagrant:vagrant ~vagrant/.gdbinit
+
+# install pwntools
+pip install pwn
 
 # Send a friendly message indicating that setup is complete
 which notify-send && DISPLAY=:0 sudo -u vagrant notify-send "Provisioning is complete. You can now use the machine." || true
