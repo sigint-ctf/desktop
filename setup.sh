@@ -49,5 +49,8 @@ chown vagrant:vagrant ~vagrant/.gdbinit
 # install pwntools
 pip install pwn
 
+#update capstone for ROPgadget
+sudo pip install capstone --upgrade
+
 # Send a friendly message indicating that setup is complete
 which notify-send && DISPLAY=:0 sudo -u vagrant notify-send "Provisioning is complete. You can now use the machine." || true
