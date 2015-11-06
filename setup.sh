@@ -1,5 +1,8 @@
 #!/bin/sh
 
+apt-get install -y xfce4
+exit
+
 # Add 32-bit libraries
 dpkg --add-architecture i386
 apt-get update
@@ -16,9 +19,11 @@ apt-get install -y strace ltrace
 apt-get install -y hexedit
 
 apt-get install -y testdisk foremost
-apt-get install -y wireshark
+#apt-get install -y wireshark
 
 apt-get install -y p7zip-full
+
+
 
 mkdir -p /tmp/build/
 

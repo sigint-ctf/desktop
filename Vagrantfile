@@ -1,11 +1,11 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-box    = 'debian-7.5-desktop'
+box    = 'debian-8-desktop'
 url    = ''
-cksum  = '5b8f187e3134f31632541ec4f37d5bb10527992f164cfe0b03dfd6019a56afe7'
+cksum  = 'e48b4620b52ac3aadf26e9452524fa42c477df043ee98d2daa79a2b628de605a'
 cktype = 'sha256'
-name   = 'debian-7.5'
+name   = 'debian-8'
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
