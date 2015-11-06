@@ -23,6 +23,9 @@ apt-get install -y testdisk foremost
 
 apt-get install -y p7zip-full
 
+# Fix the wm to be xfce by default
+rm /etc/alternatives/x-session-manager
+ln -s /usr/bin/xfce4-session /etc/alternatives/x-session-manager
 
 
 mkdir -p /tmp/build/
@@ -56,6 +59,7 @@ pip install pwn
 
 #update capstone for ROPgadget
 sudo pip install capstone --upgrade
+
 
 # Send a friendly message indicating that setup is complete
 which notify-send && DISPLAY=:0 sudo -u vagrant notify-send "Provisioning is complete. You can now use the machine." || true
